@@ -14,13 +14,13 @@ let userEntries = retrieveEntries();
 const displayEntries = () => {
     const entries = retrieveEntries();
     const tableEntries = entries.map((entry) => {
-        const nameCell = `<td class='border px-4 py-2'>${entry.name}</td>`;
-        const emailCell = `<td class='border px-4 py-2'>${entry.email}</td>`; 
-        const passwordCell = `<td class='border px-4 py-2'>${entry.password}</td>`
-        const dobCell = `<td class='border px-4 py-2'>${entry.dob}</td>`;
-        const acceptTermsCell = `<td class='border px-4 py-2'>${entry.acceptedTermsAndconditions}</td>`;
+        const namecell = `<td class='border px-4 py-2'>${entry.name}</td>`;
+        const emailcell = `<td class='border px-4 py-2'>${entry.email}</td>`; 
+        const passwordcell = `<td class='border px-4 py-2'>${entry.password}</td>`
+        const dobcell = `<td class='border px-4 py-2'>${entry.dob}</td>`;
+        const acceptTermscell = `<td class='border px-4 py-2'>${entry.acceptedTermsAndconditions}</td>`;
 
-        const row  = `<tr>${nameCell} ${emailCell} ${passwordCell} ${dobCell} ${acceptTermsCell}</tr>`;
+        const row  = `<tr>${namecell} ${emailcell} ${passwordcell} ${dobcell} ${acceptTermscell}</tr>`;
         return row;
 
     }).join("\n");
